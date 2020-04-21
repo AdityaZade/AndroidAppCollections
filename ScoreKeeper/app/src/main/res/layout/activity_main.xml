@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#87CEEB"
+        android:text="CRICKET"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/team_a"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/team_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/team_a"
+            android:gravity="center"
+            android:text="Team B"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/score_team_a"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/team_a"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/score_team_b"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/team_b"
+            android:layout_toRightOf="@id/score_team_a"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button_6_a"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score_team_a"
+            android:layout_margin="10dp"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_6_a"
+            android:text="SIXER" />
+
+        <Button
+            android:id="@+id/button_5_a"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_6_a"
+            android:layout_margin="10dp"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_5_a"
+            android:text="Penalty/Byes" />
+
+        <Button
+            android:id="@+id/button_4_a"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_5_a"
+            android:layout_margin="10dp"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_4_a"
+            android:text="FOUR" />
+
+        <Button
+            android:id="@+id/button_3_a"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_4_a"
+            android:layout_margin="10dp"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_3_a"
+            android:text="Triple" />
+
+        <Button
+            android:id="@+id/button_2_a"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_3_a"
+            android:layout_margin="10dp"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_2_a"
+            android:text="Double" />
+
+        <Button
+            android:id="@+id/button_1_a"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_2_a"
+            android:layout_margin="10dp"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_1_a"
+            android:text="Single" />
+
+        <Button
+            android:id="@+id/button_6_b"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score_team_b"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/button_6_a"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_6_b"
+            android:text="SIXER" />
+
+        <Button
+            android:id="@+id/button_5_b"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_6_b"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/button_5_a"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_6_b"
+            android:text="Penalty/Byes" />
+
+        <Button
+            android:id="@+id/button_4_b"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_5_b"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/button_4_a"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_4_b"
+            android:text="FOUR" />
+
+        <Button
+            android:id="@+id/button_3_b"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_4_b"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/button_3_a"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_3_b"
+            android:text="Triple" />
+
+        <Button
+            android:id="@+id/button_2_b"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_3_b"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/button_2_a"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_2_b"
+            android:text="Double" />
+
+        <Button
+            android:id="@+id/button_1_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_2_b"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/button_1_a"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:onClick="point_1_b"
+            android:text="Single" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#87CEEB"
+        android:onClick="reset"
+        android:text="Reset" />
+</LinearLayout>

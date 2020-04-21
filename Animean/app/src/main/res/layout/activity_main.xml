@@ -1,0 +1,94 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:src="@drawable/helenium"  />
+
+
+<TextView
+     android:text="Flow(er)rists"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/title"
+     android:textSize="36sp"
+    android:textAlignment="center"
+    android:textColor="#E65100"
+    android:textStyle="bold"
+android:fontFamily="sans-serif-light"
+android:padding="20dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="A Garden full of Flowers,just for you"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_alignBottom="@id/title"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:textColor="#EEFF41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="Visit Us:"
+        android:textSize="20sp"
+        android:layout_above="@+id/title2"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:textColor="#E65100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:text="111,Chattrapati Square"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@id/title3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:textColor="#FFD54F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="Get In touch"
+        android:layout_above="@id/title3"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:textColor="#E65100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:text="Flowerists.org"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFD54F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
